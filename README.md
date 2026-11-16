@@ -38,6 +38,8 @@ Augmentasi apa yang membantu U-Net menemukan polip pada citra kolonoskopi, dan a
 Contoh augmentasi yang dicoba:
 
 ![flip](augmentasi_flip.png)
+![kecerahan dan kontras](augmentasi_kecerahan_dan_kontras.png)
+![blur](augmentasi_blur.png)
 <!-- Ganti nama file sesuai skenario kalian (lihat isi folder hasil/). -->
 
 ## 4. Hasil
