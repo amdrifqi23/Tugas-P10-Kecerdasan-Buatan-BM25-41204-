@@ -37,7 +37,7 @@ Augmentasi apa yang membantu U-Net menemukan polip pada citra kolonoskopi, dan a
 
 Contoh augmentasi yang dicoba:
 
-![Contoh augmentasi]([hasil/augmentasi_flip.png](https://github.com/amdrifqi23/Tugas-P10-Kecerdasan-Buatan-BM25-41204-/blob/main/augmentasi_blur.png))
+[hasil/augmentasi_flip.png](https://github.com/amdrifqi23/Tugas-P10-Kecerdasan-Buatan-BM25-41204-/blob/main/augmentasi_blur.png))
 <!-- Ganti nama file sesuai skenario kalian (lihat isi folder hasil/). -->
 
 ## 4. Hasil
