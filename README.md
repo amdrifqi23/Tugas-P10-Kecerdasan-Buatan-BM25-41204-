@@ -22,8 +22,6 @@ Augmentasi apa yang membantu U-Net menemukan polip pada citra kolonoskopi, dan a
 - Model: U-Net mini (±0,5 juta parameter), 50 epoch, 3 ulangan per skenario.
 - Dijalankan di: Google Colab T4.
 
-![Contoh data](hasil/contoh_data.png)
-
 ## 3. Skenario augmentasi & hipotesis
 
 <!-- Tulis bagian ini SEBELUM menjalankan eksperimen. Commit dulu, baru jalankan.
@@ -39,7 +37,7 @@ Augmentasi apa yang membantu U-Net menemukan polip pada citra kolonoskopi, dan a
 
 Contoh augmentasi yang dicoba:
 
-![Contoh augmentasi](hasil/augmentasi_flip.png)
+![Contoh augmentasi]([hasil/augmentasi_flip.png](https://github.com/amdrifqi23/Tugas-P10-Kecerdasan-Buatan-BM25-41204-/blob/main/augmentasi_blur.png))
 <!-- Ganti nama file sesuai skenario kalian (lihat isi folder hasil/). -->
 
 ## 4. Hasil
