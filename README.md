@@ -53,12 +53,12 @@ Contoh augmentasi yang dicoba:
 | Kecerahan & kontras | 0.330 ± 0.000 | 0.219 ± 0.000 | 0.330 |
 | Blur | 0.380 ± 0.000 | 0.261 ± 0.000 | 0.380 |
 
-![Perbandingan Dice](hasil/perbandingan.png)
-https://colab.research.google.com/drive/1w1V2An1FVl76gLMSBKYOQXX3Zs7agU-a#scrollTo=14dd4f45&fullscreenOutput=true
+![Perbandingan Dice](perbandingan.png)
+https://colab.research.google.com/drive/1em1_WpgoTg9zoINC3Lq1PixVhgJqnyLR?usp=sharing
 
 ## 5. Analisis peta kesalahan
 Analisis kualitatif melalui peta kesalahan menunjukkan adanya perbedaan performa yang kontras antara citra dengan polip berukuran besar dan polip berukuran kecil. Pada kasus polip besar dan menonjol (Baris 3 dan 4), seluruh skenario mampu memprediksi area polip (True Positive berwarna hijau) dengan akurat, di mana augmentasi Flip dan Blur menghasilkan batas segmentasi paling presisi dengan skor Dice mencapai 0,92 dan 0,97 serta area False Positive (merah) yang sangat minimal. Sebaliknya, pada kasus polip berukuran kecil atau datar yang disertai pantulan cahaya terang pada mukosa (Baris 1 dan 2), model cenderung gagal mendeteksi polip (False Negative berwarna biru) dan salah mengenali lipatan mukosa terang sebagai polip (False Positive berwarna merah).   Selain itu, peta kesalahan mengungkap bahwa penurunan skor pada augmentasi kecerahan dan kontras disebabkan oleh fenomena over-segmentation yang masif. Hal ini tampak jelas pada Baris 2 dan Baris 4, di mana area False Positive berwarna merah melebar secara signifikan di sekitar polip maupun jaringan mukosa normal sehingga menurunkan skor Dice masing-masing menjadi 0,11 dan 0,79. Sementara itu, augmentasi Flip terbukti paling efektif dalam menekan kesalahan False Positive di area tepi objek sekaligus meningkatkan kemampuan deteksi awal pada polip kecil di sudut citra (Baris 2 dengan Dice 0,27 dibandingkan tanpa augmentasi sebesar 0,00).
-![Peta kesalahan](hasil/peta_kesalahan.png)
+![Peta kesalahan](peta_kesalahan.png)
 
 <!-- Hijau = benar, merah = false positive, biru = false negative.
      Pertanyaan pemandu: Polip seperti apa yang sering terlewat (kecil? datar? warna mirip dinding usus?)
